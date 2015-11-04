@@ -11,6 +11,10 @@ body {
   margin-bottom: 2px;
 }
 
+hr {
+  border-top: 1px solid #ccc !important;
+}
+
 a.pagination-item {
   border: none;
 }
