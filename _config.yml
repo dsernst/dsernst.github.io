@@ -13,7 +13,7 @@ tagline:          'A personal site'
 description:      'David Ernst — A personal site'
 url:              http://dsernst.com
 baseurl:          '/'
-paginate:         5
+paginate:         10
 
 author:
   name:           'David Ernst'
