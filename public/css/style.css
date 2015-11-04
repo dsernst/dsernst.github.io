@@ -15,6 +15,10 @@ a.pagination-item {
   border: none;
 }
 
+.pagination-item:last-child {
+  float: right;
+}
+
 .fa-twitter {
   color: #55ACEE;
 }
