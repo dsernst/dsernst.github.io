@@ -24,6 +24,14 @@ a.pagination-item {
   text-align: right;
 }
 
+span.post-date {
+  display: inline-block;
+}
+
+h1.post-title {
+  margin: 0;
+}
+
 .fa-twitter {
   color: #55ACEE;
 }
