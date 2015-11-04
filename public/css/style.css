@@ -11,6 +11,10 @@ body {
   margin-bottom: 2px;
 }
 
+a.pagination-item {
+  border: none;
+}
+
 .fa-twitter {
   color: #55ACEE;
 }
