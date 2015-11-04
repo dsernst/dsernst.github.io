@@ -15,8 +15,13 @@ a.pagination-item {
   border: none;
 }
 
+.pagination-item:first-child {
+  text-align: left;
+}
+
 .pagination-item:last-child {
   float: right;
+  text-align: right;
 }
 
 .fa-twitter {
