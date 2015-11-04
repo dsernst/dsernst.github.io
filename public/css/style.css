@@ -2,6 +2,10 @@ body {
   background: #f4f4f8 !important;
 }
 
+.sidebar-toggle {
+  box-shadow: 1px 1px 1px -1px;
+}
+
 .post-footer {
   padding: 0 16px;
   margin-bottom: 3em;
