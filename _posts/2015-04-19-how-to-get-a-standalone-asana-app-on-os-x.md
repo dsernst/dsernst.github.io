@@ -12,6 +12,12 @@ This is pretty easy, and takes only a minute or two to set up.
 
 All you need to do is use the free [Fluid app](http://fluidapp.com/) to package the web app as a desktop app.
 
+---------------
+
+***UPDATE (February 25, 2016):*** I've switched from Fluid to [Epichrome](https://github.com/dmarmor/epichrome), which uses Chrome instead of Safari. The rest of the process is very similar, but Epichrome has the added benefit of letting me install Chrome extensions in these standalone apps, like the excellent [Vimium](https://vimium.github.io/).
+
+---------------
+
 After you've downloaded and installed Fluid, run it and the "**Create a Fluid App**" window should appear.
 
 For Asana, you're going to want these settings:
