@@ -11,39 +11,37 @@ There's a controversial new technology that was only just finalized as an HTML5 
 
 DRM is Digital Rights Management -- or to some, Digital Restrictions Management.
 
-DRM has long been used for offline media, like games and DVDs. It's what iTunes uses to keep songs from being passed around without paying for them, or digital rentals to expire on time. In the last few years, Netflix has brought it to the browser for their streaming video, by using Microsoft's Silverlight, the Microsoft alternative to Adobe Flash.
+DRM has long been used for offline media, like games and DVDs. It's what iTunes uses to keep songs from being passed around without paying for them, or digital rentals to expire on time. In the last few years, Netflix has brought it to the browser for their streaming video, by using Microsoft's Silverlight, the Microsoft version of Adobe Flash.
 
-These technologies are meant to keep you from downloading a file onto your own computer and sharing it, but to still be able to view and play it when the distributor says it's okay. This is done by encrypting the content-- so your machine downloads the encrpyted version, but only their special programs (iTunes, Silverlight, etc) are able to decrypt and run it. In some cases, this happens in a separate thread, or even on the GPU directly, so it can't be tampered with or copied.
+These technologies are meant to keep you from downloading a file onto your own computer and sharing it, but to still be able to view and play it when the distributor says it's okay. This is done by encrypting the content-- so your machine downloads the encrypted version, but only their special programs  are able to decrypt and run it. In some cases, this happens in a separate thread, or even on the GPU directly, so it can't be tampered with or copied.
 
 ## EME
 
-But there were some problems with using this online: for one, each system has it's own requirements. Different hardware requires different decryption technologies. There's Apple FairPlay, Microsoft PlayReady, Google Widevine, Adobe Access, and more. And different devices come with different decryption systems. So it's a challenge to be able to play the same content, e.g. the same Netflix video, on different devices: Windows PCs, iPhones, Android phones, Playstations, and so on. This required huge engineering resources, and still didn't work on more obscure platforms like Linux, even though they have millions of potential customers.
+But there were some problems with using this online: for one, each system has it's own requirements. Different hardware requires different decryption technologies. There's Apple FairPlay, Microsoft PlayReady, Google Widevine, Adobe Access, and more. And different devices come with different decryption systems. So it's a challenge to be able to play the same content, e.g. the same Netflix video, on different devices: Windows PCs, iPhones, Android phones, Playstations, and so on. This required huge engineering resources, and still didn't work on less mainstream platforms like Linux, even though they have millions of potential customers.
 
-This is where EME comes in. EME defines the standard for the file's encryption metadata. It's an "Extension" for "Media", to deal with "Encryption". In a world with the EME standard, a media file can be encrypted just once, and each browser or playback device can figure out on its own how to handle it with the hardware's built-in decryption schemes.
+This is where EME comes in. EME defines the standard for the file's encryption metadata. It's an Extension for Media, to deal with Encryption. In a world with the EME standard, a media file can be encrypted just once, and each browser or playback device can figure out on its own how to handle it with the hardware's built-in decryption schemes.
 
 ## Tappy
 
-So my Hack Reactor thesis partners agreed to explore the idea of building an application around this new standard. We wanted to allow content creators to publish and protect their work, set their own price, and directly earn a living by sharing their art.
+So 3 friends and I agreed to explore the idea of building an application around this new standard. We'd like to allow content creators to publish and protect their work, set their own price, and directly earn a living by sharing their art.
 
-We imagined a system where they could run their songs and videos through our program to encrypt it and allow them to set a per-stream price. Then they could embed their files right on their own sites, instead of being forced onto platforms like iTunes, Spotify, or Amazon. Whenever their audience sees the embed, they would be prompted to authorize the payment at the creator's price. Once paid, the keyserver would send the appropriate decryption key so the content can be played right there.
+We imagine a system where they could run their songs and videos through our program to encrypt it and allow them to set a per-stream price. They could set it anywhere from a thousandth of a penny to hundreds of dollars. Then they could embed their files anywhere they choose, instead of being forced onto platforms like iTunes, Spotify, or Amazon. Whenever their audience sees the embed, they would be prompted to authorize the payment at the creator's price. Once paid, the keyserver would send the appropriate decryption key so the content can be played right there.
 
-We hoped this would empower independent artists, enrich sustainable creative industries, and weaken dependence on advertising.
+We hope this would empower independent artists, enrich sustainable creative industries, and weaken dependence on advertising.
 
 But after exploring EME for a while, we became more aware of a number of large technical challenges:
 
-1. Encrypting the media-- almost all of the encryption offerings are proprietary
-2. Setting up a key server-- there's very little documentation on this, and what is out there is jumbled legalese and overly technical specification documents
-3. Getting the EME working-- same challenges as with the key server. Did I mention most of the information about EME was only published in the last week or two?
+1. Encrypting the media: almost all of the encryption offerings are proprietary.
+2. Setting up a key server: there's very little documentation on this, and what is out there is jumbled legalese and overly technical specification documents.
+3. Getting the EME working: same challenges as with the key server. Did I mention most of the information about EME was only published in the last week or two?
 
-And then on top of this we saw some market challenges:
+And then there were market challenges:
 
 1. Would creators want to use this? We spoke with a few and it wasn't super reassuring.
 2. Why would the creator want to hand over payment control to us, a relatively unknown new player?
 3. Why wouldn't the creator just put their content behind a paywall? This is what entertainers like Louis C.K. and Aziz Ansari have already done.
 
-So for this thesis project, we've decided save EME for another day. Instead, we'll pursue a different idea, which I look forward to share with you.
-
-Feel free to leave a comment below. Thanks.
+Given the tight time restriction we had for this project, we've decided to save EME for another day. Instead, we'll pursue a different idea, which I look forward to share with you.
 
 ## Further readings
 The official W3C spec for EME:
